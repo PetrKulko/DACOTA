@@ -754,6 +754,7 @@ body {
   font-size: 59px;
   line-height: 70px;
   color: #353535;
+  white-space: nowrap;
 }
 .price__item-rate--numb span {
   font-size: 35px;
