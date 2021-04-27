@@ -707,6 +707,9 @@ body {
   margin: 0px 20px 118px 0px;
   padding: 0px 18px 35px 12px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .price__item-images {
   position: absolute;
