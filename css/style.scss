@@ -1,6 +1,11 @@
 @import "normalize.scss";
+@import "fonts.scss";
 
 // == GENERAL == //
+
+body{
+    @include AssistantRegular;
+}
 
 .container{
     max-width: 1230px;

@@ -1,0 +1,39 @@
+
+// === ASSISTANT === //
+
+@mixin AssistantRegular{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+}
+
+@mixin AssistantSimiBold{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+}
+
+@mixin AssistantBold{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+}
+
+@mixin AssistantExtraBold{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 800;
+}
+
+// === / ASSISTANT === //
+
+// === RUBIK === //
+
+@mixin RubikRegular{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+@mixin RubikMedium{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+
+// === / RUBIK === //

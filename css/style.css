@@ -341,6 +341,11 @@ template {
   display: none;
 }
 
+body {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 400;
+}
+
 .container {
   max-width: 1230px;
   margin: 0 auto;
