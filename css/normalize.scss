@@ -347,3 +347,31 @@
   [hidden] {
     display: none;
   }
+
+  button {
+    cursor: pointer;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  *, *:after, *:before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-size: inherit;
+  }

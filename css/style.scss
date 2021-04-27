@@ -5,6 +5,9 @@
 
 body{
     @include AssistantRegular;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
 }
 
 .container{
@@ -13,12 +16,191 @@ body{
     padding: 0 15px;
 }
 
+.item-btn{
+    width: 155px;
+    background-color: #FB543A;
+    border-radius: 10px;
+
+    & a {
+        display: block;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 8px;
+    }
+
+    &:hover{
+        background-color: #fa3b1d;
+        transition: .5s;
+    }
+
+    &:active{
+        background-color: #f72808;
+        transition: .5s;
+    }
+}
+
 // == / GENERAL == //
 
 // == TOP == //
 
 .top{
-    background-color: green;
+    padding: 90px 0px 180px;
+    background-image: url(../img/decore.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        &::after,
+        &::before{
+            content: "";
+            background-image: url(../img/traced.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 110px;
+            height: 110px;
+            opacity: 0.02;
+        }
+        
+        &::after{
+            transform: rotate(-31.58deg);
+            left: -30px;
+        }
+
+        &::before{
+            transform: rotate(20.4deg);
+            right: -80px;
+            top: -70px;
+        }
+    }
+
+    &__content{
+        text-align: center;
+        max-width: 790px;
+        z-index: 5;
+        position: relative;
+
+        &::after,
+        &::before{
+            content: "";
+            background-image: url(../img/traced-mini.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            opacity: 0.1;
+        }
+        
+        &::after{
+            transform: rotate(-4.58deg);
+            left: 0px;
+            bottom: -130px;
+        }
+
+        &::before{
+            transform: rotate(-58.6deg);
+            left: -30px;
+            top: 220px;
+
+        }
+
+        &-description{
+            @include AssistantExtraBold;
+            font-size: 66px;
+            line-height: 86px;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &-title{
+            @include AssistantBold;
+            font-size: 116px;
+            line-height: 152px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: #FFFFFF;
+        }
+
+        &-price{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            text-shadow: 0px 3.48718px 3.48718px rgba(0, 0, 0, 0.25);
+            margin-bottom: 42px;
+
+            &--old{
+                @include AssistantSimiBold;
+                font-size: 42px;
+                line-height: 55px;
+                margin: 0px 35px 0px 0px;
+            }
+
+            &--old span{
+                text-decoration: line-through;
+            }
+
+            &--new{
+                @include AssistantBold;
+                font-size: 55px;
+                line-height: 72px;
+                color: #FFFFFF;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        &-btn{
+            width: 245px;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+            position: relative;
+            margin: 0 auto;
+
+            &::before{
+                content: "";
+                background-image: url(../img/basket.svg);
+                height: 35px;
+                width: 40px;
+                left: 50px;
+                top: 10px;
+                position: absolute;
+            }
+
+            &--link{
+                @include AssistantBold;
+                text-decoration: none;
+                font-size: 30px;
+                line-height: 40px;
+                color: #393939;
+                padding: 10px 40px 10px 100px;
+                display: block;
+            }
+
+            &:hover{
+                background-color: rgb(235, 235, 235);
+                transition: .5s;
+            }
+
+            &:active{
+                background-color: rgb(224, 222, 222);
+            }
+        }
+    }
+
+    &__images{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &-face{
+            position: relative;
+            bottom: -80px;
+        }
+    }
 }
 
 // == / TOP == //
@@ -26,7 +208,27 @@ body{
 // == ADVANTAGES == //
 
 .advantages{
-    background-color: red;
+    padding: 60px 0px 86px;
+    
+    &__items{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: flex-end;
+        flex-wrap: wrap
+    }
+
+    &__item{
+        width: 305px;
+        margin-bottom: 33px;
+
+        &-text{
+            @include AssistantSimiBold;
+            font-size: 33px;
+            line-height: 43px;
+            color: #393939;
+        }
+    }
 }
 
 // == / ADVANTAGES == //
@@ -34,7 +236,99 @@ body{
 // == PRICE == //
 
 .price{
-    background-color: blue;
+    margin-top: 72px;
+    
+    &__items{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    &__item{
+        width: 380px;
+        height: 533px;
+        border-radius: 20px;
+        background-color: #F7F7F7;
+        border: 2px solid #DADADA;
+        margin: 0px 0px 118px 20px;
+        padding: 0px 18px 35px 12px;
+        position: relative;
+
+
+        &-images{
+            position: relative;
+            top: -75px;
+        }
+
+        &-inner{
+            text-align: right;
+        }
+
+        &-title{
+            @include AssistantSimiBold;
+            font-size: 37px;
+            line-height: 48px;
+            color: #353535;
+            margin-bottom: 24px;
+        }
+
+
+        &-rate{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include RubikMedium;
+
+            &--numb{
+                font-size: 59px;
+                line-height: 70px;
+                color: #353535;
+
+                & span{
+                    font-size: 35px;
+                    line-height: 41px;
+                }
+            }
+
+            &--link{
+                @include AssistantSimiBold;
+                text-decoration: underline;
+                font-size: 24px;
+                line-height: 31px;
+                color: #000000;
+            }
+        }
+
+        &-btn{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            &::before,
+            &::after{
+                content: "";
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                background-repeat: no-repeat;
+            }
+        
+            &::before{
+                background-image: url(../img/add.svg);
+                left: 10px;
+                top: 9px;
+            }
+        
+            &::after{
+                background-image: url(../img/basket-white.svg);
+                right: 120px;
+                top: 9px;
+            }
+        }
+    }
+
+
 }
 
 // == / PRICE == //
