@@ -1,0 +1,51 @@
+@import "normalize.scss";
+
+// == GENERAL == //
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// == / GENERAL == //
+
+// == TOP == //
+
+.top{
+    background-color: green;
+}
+
+// == / TOP == //
+
+// == ADVANTAGES == //
+
+.advantages{
+    background-color: red;
+}
+
+// == / ADVANTAGES == //
+
+// == PRICE == //
+
+.price{
+    background-color: blue;
+}
+
+// == / PRICE == //
+
+// == COMMENTS == //
+
+.comments{
+    background-color: orange;
+}
+
+// == / COMMENTS == //
+
+// == FOOTER == //
+
+.footer{
+    background-color: #fff;
+}
+
+// == / FOOTER == //
