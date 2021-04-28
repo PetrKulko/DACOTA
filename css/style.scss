@@ -270,7 +270,7 @@ body{
         &-images{
             position: absolute;
             top: -75px;
-            left: 55px;
+            left: 48px;
             height: 193px;
             width: 274px;
             object-fit: cover;
@@ -325,27 +325,35 @@ body{
         &-btn{
             display: flex;
             justify-content: space-between;
-            position: relative;
 
-            &::before,
-            &::after{
-                content: "";
-                width: 25px;
-                height: 25px;
-                position: absolute;
-                background-repeat: no-repeat;
+            &--add{
+                position: relative;
+
+                &::before{
+                    content: "";
+                    background-image: url(../img/add.svg);
+                    left: 10px;
+                    top: 9px;
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    background-repeat: no-repeat;
+                }
             }
-        
-            &::before{
-                background-image: url(../img/add.svg);
+
+            &--basket{
+                position: relative;
+
+                &::after{
+                content: "";
+                background-image: url(../img/basket-white.svg);
                 left: 10px;
                 top: 9px;
-            }
-        
-            &::after{
-                background-image: url(../img/basket-white.svg);
-                right: 120px;
-                top: 9px;
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                background-repeat: no-repeat;
+                }
             }
         }
     }
