@@ -498,10 +498,12 @@ body {
 }
 
 .top {
-  padding: 90px 0px 180px;
-  background-image: url(../img/decore.svg);
+  padding-top: 90px;
+  padding-bottom: 9%;
+  background-image: url(../img/Vector\ 4.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 .top__wrapper {
   display: -webkit-box;
@@ -602,10 +604,14 @@ body {
 .top__content-price--new {
   font-family: 'Assistant', sans-serif;
   font-weight: 700;
-  font-size: 55px;
-  line-height: 72px;
+  font-size: 90px;
+  line-height: 56px;
   color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.top__content-price--new span {
+  font-size: 55px;
+  line-height: 60px;
 }
 .top__content-btn {
   width: 245px;
@@ -653,7 +659,7 @@ body {
 }
 .top__images-face {
   position: relative;
-  bottom: -80px;
+  bottom: -65px;
 }
 
 .advantages {
@@ -799,7 +805,7 @@ body {
 }
 
 .comments {
-  padding-top: 130px;
+  padding-top: 8%;
   background-image: url(../img/decore-footer.svg);
   background-repeat: no-repeat;
   background-size: cover;
