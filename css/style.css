@@ -1168,6 +1168,10 @@ body {
   .price__item-btn--basket::after {
     top: 17px;
   }
+
+  .comments__logo {
+    padding: 66px 0px 40px;
+  }
 }
 @media (max-width: 330px) {
   .price__item-images {
