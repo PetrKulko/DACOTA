@@ -2,6 +2,7 @@
 @import "fonts.scss";
 @import "slick.scss";
 
+
 // == GENERAL == //
 
 body{
@@ -77,7 +78,7 @@ body{
 
         &::before{
             transform: rotate(20.4deg);
-            right: -80px;
+            right: -2%;
             top: -70px;
         }
     }
@@ -109,7 +110,6 @@ body{
             transform: rotate(-58.6deg);
             left: -30px;
             top: 220px;
-
         }
 
         &-description{
@@ -153,6 +153,7 @@ body{
                 line-height: 56px;
                 color: #FFFFFF;
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                white-space: nowrap;
 
                 & span{
                     font-size: 55px;
@@ -207,6 +208,8 @@ body{
         &-face{
             position: relative;
             bottom: -65px;
+            max-width: 400px;
+            max-height: 280px;
         }
     }
 }
@@ -268,6 +271,9 @@ body{
             position: absolute;
             top: -75px;
             left: 55px;
+            height: 193px;
+            width: 274px;
+            object-fit: cover;
         }
 
         &-inner{
@@ -405,12 +411,11 @@ body{
 // == FOOTER == //
 
 .footer{
-    background-image: url(../img/decore-footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(-57.31deg, #F74552 -3.34%, #FE6A82 48.53%, #FF424E 98.56%);
     text-align: center;
     padding: 109px 0px 85px;
-    background-position: 50% 100%;
 }
 
 // == / FOOTER == //
+
+@import "media.scss";
