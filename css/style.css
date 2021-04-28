@@ -675,9 +675,9 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -691,6 +691,11 @@ body {
   font-size: 33px;
   line-height: 43px;
   color: #393939;
+}
+.advantages__item-icon {
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
 }
 
 .price {
@@ -851,6 +856,10 @@ body {
   line-height: 33px;
   margin-bottom: 20px;
 }
+.comments__logo {
+  text-align: center;
+  padding: 109px 0px 85px;
+}
 
 .slick-slide img {
   display: inline-block;
@@ -866,12 +875,6 @@ body {
   position: absolute;
   right: -40px;
   top: 80px;
-}
-
-.footer {
-  background: linear-gradient(-57.31deg, #F74552 -3.34%, #FE6A82 48.53%, #FF424E 98.56%);
-  text-align: center;
-  padding: 109px 0px 85px;
 }
 
 @media (max-width: 1310px) {

@@ -225,7 +225,7 @@ body{
         display: flex;
         justify-content: space-around;
         text-align: center;
-        align-items: center;
+        align-items: flex-end;
         flex-wrap: wrap
     }
 
@@ -238,6 +238,12 @@ body{
             font-size: 33px;
             line-height: 43px;
             color: #393939;
+        }
+
+        &-icon{
+            width: 52px;
+            height: 52px;
+            overflow: hidden;
         }
     }
 }
@@ -396,6 +402,11 @@ body{
             margin-bottom: 20px;
         }
     }
+
+    &__logo{
+        text-align: center;
+        padding: 109px 0px 85px;
+    }
 }
 
 .slick-slide img {
@@ -415,15 +426,5 @@ body{
 }
 
 // == / COMMENTS == //
-
-// == FOOTER == //
-
-.footer{
-    background: linear-gradient(-57.31deg, #F74552 -3.34%, #FE6A82 48.53%, #FF424E 98.56%);
-    text-align: center;
-    padding: 109px 0px 85px;
-}
-
-// == / FOOTER == //
 
 @import "media.scss";
